@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+
+*,
+*:before
+*:after{
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Hind', sans-serif;
+  background-color: #ecf0f1;
+}
+
+
+
+ /* topnav */
+ 
+ #Wname{ 
+  font-weight: 600;
+  font-size: 55px;
+  padding-left: 70px;
+  padding-top: 10px;
+  margin:0 ;
+  width: 160px;
+  height: 45px;
+  color: rgb(0, 0, 0);
+  font-family: monospace;
+}
+
+#Wname:hover{
+  cursor: pointer;
+}
+
+.topnav {
+  z-index: 1;
+  top: 0;
+  position: fixed;
+  display: flex;
+  height: 90px;
+  background-color: #ffffff;
+  width: 100%;
+  box-shadow: 2px 5px 7px #1919199f;
+}
+.topnav a {
+  color: #000000; /* Default color for links */
+  padding: 20px;
+  transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+#nav-btns{
+  text-decoration: none;
+  right: 0;
+  margin: 0 0 0 600px;
+  
+  transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+/* nav buttons */
+
+ul{
+  list-style:none;
+}
+
+a{
+  text-decoration: none;
+  color:rgb(114, 114, 114);
+  text-decoration: none;
+  padding-left: 10px;
+  padding-top: 0px;
+}
+
+.navbtn0 {
+  /* font-family: 'Hind', sans-serif; */
+  text-align: center;
+  font-size: 17px;
+  margin: -14px 0 0 -200px;
+  position: absolute;
+  display: inline;
+  height: 20px;
+  text-decoration: none;
+  content: "";  
+}
+
+.navbtn0:after{
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0px;
+  left: 12px;
+  bottom: -16px;
+  transition: 0.3s; 
+  background-color:#e74c3c;
+}
+
+.navbtn0:hover{
+  color: #2c3e50;
+}
+
+.navbtn0:hover::after{
+  width: 108px;
+  
+  
+}
+
+.navbtn1 {
+    position: fixed;
+    font-size: 17px;
+    margin: -14px 0 0 -70px;
+    position: absolute;
+    display: inline;
+    height: 20px;
+    text-decoration: none;
+}
+
+.navbtn1:after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0px;
+    left: 12px;
+    bottom: -17px;
+    transition: 0.3s; 
+    background-color:#e74c3c;
+}
+
+.navbtn1:hover{
+    color: #2c3e50;
+}
+
+.navbtn1:hover::after{
+    width: 120px;
+} 
+
+.navbtn2 {
+  text-align: center;
+  font-size: 17px;
+  margin: -14px 0 0 65px;
+  position: absolute;
+  display: inline;
+  height: 20px;
+  text-decoration: none;
+}
+
+.navbtn2:after{
+    content: "";
+    position: absolute;
+    height: 3.2px;
+    width: 0px;
+    left: 8px;
+    bottom: -17px;
+    transition: 0.3s; 
+    background-color:#e74c3c;
+}
+
+.navbtn2:hover{
+    color: #2c3e50;
+}
+
+.navbtn2:hover::after{
+    width: 103px;
+}
+
+.navbtn3 {
+  text-align: center;
+  font-size: 17px;
+  margin: -14px 0 0 178px;
+  /* margin-top:10px ; */
+  position: absolute;
+  display: inline;
+  height: 20px;
+  text-decoration: none;
+}
+
+.navbtn3:after{
+  content: "";
+  position: absolute;
+  height: 3.2px;
+  width: 0px;
+  left: 15px;
+  bottom: -16px;
+  transition: 0.3s; 
+  background-color: #e74c3c;
+}
+
+.navbtn3:hover{
+  color: #2c3e50;
+}
+
+.navbtn3:hover::after{
+  width: 105px;
+} 
+
+.navbtn4 {
+  text-align: center;
+  font-size: 17px;
+  margin: -14px 0 0 298px;
+  position: absolute;
+  display: inline;
+  width: 60px;
+  height: 20px;
+  text-decoration: none;
+}
+
+.navbtn4:hover{
+    color: #2c3e50;
+}
+
+#highlight{
+  z-index: 1;
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100px;
+  top: 75px;
+  right: 183px;
+  bottom: -9px;
+  transition: 0.3s; 
+  background-color:#e74c3c;
+}
+
+.navbtn5 {
+  /* position: fixed; */
+  font-size: 17px;
+  background-color: rgb(255, 255, 255);
+  margin: -14px 0 0 420px;
+  position: absolute;
+  display: inline;
+  width: 85px;
+  height: 20px;
+  text-decoration: none;
+}
+
+.navbtn5:after{
+  content: "";
+  position: absolute;
+  height: 3.2px;
+  width: 0px;
+  left: 12px;
+  bottom: -16px;
+  transition: 0.3s; 
+  background-color:#e74c3c;
+}
+
+.navbtn5:hover{
+  color: #2c3e50;
+}
+
+.navbtn5:hover::after{
+  width: 100px;
+} 
+
+/* Add a class to indicate the active link */
+.active {
+  color: #3498db; /* Change color when active */
+}
+
+.video-container video {
+    width: 80%;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    border: 10px solid #e8dcca; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+
+}
+#div3 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333; 
+}
+
+#ballot-con-con{
+  margin: 0 0 350px 0;
+}
+
+#ballot-con{
+  position: absolute;
+  left: 550px;
+  width: 400px;
+  height: 250px;
+  padding: 0 20px 0 20px;
+  border-collapse: collapse;
+  box-shadow: 1px 2px 12px 2px #00000060; /* third px is the blur value*/
+  background-color: #ffffff;
+}
+
+#text-ballot{
+  font-size: 1.2rem;
+}
+
+.fa-link{
+  margin: 0 0 0 160px;
+}
+
+#sample-ballot-lnk{
+  margin: 0 0 0 70px;
+  font-size: 1.7rem;
+  color: #000000;
+}
+
+#sample-ballot-lnk:hover{
+  color: #8d8d8d;
+}

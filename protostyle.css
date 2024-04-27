@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+
+*,
+*:before
+*:after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Hind', sans-serif;
+}
+
+
+
+ /* topnav */
+ 
+ #Wname{ 
+  font-weight: 600;
+  font-size: 55px;
+  padding-left: 70px;
+  padding-top: 10px;
+  margin:0 ;
+  width: 160px;
+  height: 45px;
+  color: rgb(0, 0, 0);
+  font-family: monospace;
+}
+
+#Wname:hover{
+  cursor: pointer;
+}
+
+.topnav {
+  z-index: 1;
+  top: 0;
+  position: fixed;
+  display: flex;
+  height: 90px;
+  background-color: #ffffff;
+  width: 100%;
+  box-shadow: 2px 5px 7px #1919199f;
+}
+.topnav a {
+  color: #000000; /* Default color for links */
+  padding: 20px;
+  transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+#nav-btns{
+  text-decoration: none;
+  right: 0;
+  margin: 0 0 0 600px;
+  
+  transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+/* nav buttons */
+
+.navbtn0 {
+  text-align: center;
+  font-size: 17px;
+  margin: -14px 0 0 -200px;
+  position: absolute;
+  display: inline;
+  height: 20px;
+  text-decoration: none;
+}
+
+.navbtn0:after{
+  content: "";
+  position: absolute;
+  height: 3.2px;
+  width: 0px;
+  left: 10px;
+  bottom: -17px;
+  transition: 0.3s;
+  background-color: #e74c3c;  
+}
+
+.navbtn0:hover{
+  color: #2c3e50;
+}
+
+.navbtn0:hover::after{
+  width: 108px;
+  
+  
+}
+
+.navbtn1 {
+  position: fixed;
+  font-size: 17px;
+  margin: -14px 0 0 -70px;
+  position: absolute;
+  display: inline;
+  height: 20px;
+  text-decoration: none;
+}
+
+.navbtn1:after{
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0px;
+  left: 12px;
+  bottom: -17px;
+  transition: 0.3s; 
+  background-color:#e74c3c;
+}
+
+.navbtn1:hover{
+  color: #2c3e50;
+}
+
+.navbtn1:hover::after{
+  width: 120px;
+} 
+
+.navbtn2 {
+  text-align: center;
+  font-size: 17px;
+  margin: -14px 0 0 65px;
+  position: absolute;
+  display: inline;
+  height: 20px;
+  text-decoration: none;
+}
+
+.navbtn2:after{
+  content: "";
+  position: absolute;
+  height: 3.2px;
+  width: 0px;
+  left: 8px;
+  bottom: -17px;
+  transition: 0.3s; 
+  background-color:#e74c3c;
+}
+
+.navbtn2:hover{
+  color: #2c3e50;
+}
+
+.navbtn2:hover::after{
+  width: 103px;
+} 
+
+.navbtn3 {
+  text-align: center;
+  font-size: 17px;
+  margin: -14px 0 0 178px;
+  /* margin-top:10px ; */
+  position: absolute;
+  display: inline;
+  height: 20px;
+  text-decoration: none;
+}
+
+.navbtn3:after{
+  content: "";
+  position: absolute;
+  height: 3.2px;
+  width: 0px;
+  left: 15px;
+  bottom: -17px;
+  transition: 0.3s; 
+  background-color: #e74c3c;
+}
+
+.navbtn3:hover{
+  color: #2c3e50;
+}
+
+.navbtn3:hover::after{
+  width: 105px;
+} 
+
+.navbtn4 {
+  text-align: center;
+  font-size: 17px;
+  margin: -14px 0 0 298px;
+  position: absolute;
+  display: inline;
+  width: 60px;
+  height: 20px;
+  text-decoration: none;
+}
+
+.navbtn4:after{
+  content: "";
+  position: absolute;
+  height: 3.2px;
+  width: 0px;
+  left: 10px;
+  bottom: -17px;
+  transition: 0.3s; 
+  background-color:#e74c3c;
+}
+
+.navbtn4:hover{
+  color: #2c3e50;
+}
+
+.navbtn4:hover::after{
+  width: 105px;
+} 
+
+.navbtn5 {
+  /* position: fixed; */
+  font-size: 17px;
+  background-color: rgb(255, 255, 255);
+  margin: -14px 0 0 420px;
+  position: absolute;
+  display: inline;
+  width: 85px;
+  height: 20px;
+  text-decoration: none;
+}
+
+.navbtn5:after{
+  content: "";
+  position: absolute;
+  height: 3.2px;
+  width: 0px;
+  left: 12px;
+  bottom: -17px;
+  transition: 0.3s; 
+  background-color:#e74c3c;
+}
+
+.navbtn5:hover{
+  color: #2c3e50;
+}
+
+.navbtn5:hover::after{
+  width: 100px;
+} 
+
+/* Add a class to indicate the active link */
+.active {
+  color: #3498db; /* Change color when active */
+}
+
+#bg1{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 105%;
+  /* position: absolute; */
+}
+
+#color-overlay{
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 105%;
+  background-color: #1919199f;
+}
+
+@keyframes fadeIn {
+from {
+  transform: translateY(100%);
+    opacity: 0;
+}
+to {
+  transform: translateY(0%);
+    opacity: 1;
+}
+}
+
+#title1{
+  position: absolute;
+  margin: 300px 0 0 500px;
+  font-size: 60px;
+  font-family: arial;
+  color:rgb(255, 255, 255);
+  animation: 2s fadeIn;
+}
+
+#sentence-under-title1{
+  position: absolute;
+  margin: 380px 0 0 450px;
+  font-size: 20px;
+  font-family: arial;
+  color:rgb(255, 255, 255);
+  animation: 2s fadeIn;
+}
+
+.imageforhome2{
+  margin: 800px 0 0 100px;
+   
+}
+
+#div3{
+  position: absolute;
+  top: 750px;
+  padding: 70px 0 0 0px;
+  width: 100%;
+  height: 162%;
+  background-color: #ecf0f1;
+}
+
+.fa-handshake:hover{
+  border: #000000;
+  border-radius: 4px;
+  box-shadow: 2px 10px 7px #1919199f;
+}
+
+#title2{
+  position: absolute;
+  font-size: 42px;
+  font-weight: 600;
+  font-family: arial;
+  color:#2c3e50;
+  margin: 10px 0 0 680px;
+}
+
+#focusto{
+  position: absolute;
+  margin: 110px 0 0 500px;
+  width: 800px;
+  font-size: 18px;
+  color:#2c3e50;
+}
+
+table{
+  margin-top: 600px;
+  margin-left: 250px;
+  width: 1000px;
+}
+
+ul{
+  list-style:none;
+}
+
+a{
+  text-decoration: none;
+  color:rgb(114, 114, 114);
+  text-decoration: none;
+  padding-left: 10px;
+  padding-top: 0px;
+}
+
+
+#con1{
+  position: absolute; 
+  margin: 600px 0 0 0;
+  height: 500px;
+  left: 400px;
+}
+
+#anim-colla{
+  color: #2c3e50;
+  font-size: 35px;
+  margin: 0 0 30px 70px;
+}
+
+.collapsible {
+  background-color: #ecf0f1;
+  color: gray;
+  cursor: pointer;
+  padding: 18px;
+  width: 700px;
+  border: none;
+  border-bottom: 2px solid lightgray;
+  text-align: left;
+  font-size: 18px;
+  
+}
+
+.active, .collapsible:hover {
+  color: rgb(56, 133, 156);
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: rgb(79, 132, 155);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+  
+.active:after {
+  content: "\2212";
+}
+  
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  width: 664px;
+  
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: rgb(236, 235, 235);
+  color:rgb(94, 94, 94);
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 600px;
+}
+.social-media a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+.social-media img {
+  width: 40px; 
+  height: auto;
+}

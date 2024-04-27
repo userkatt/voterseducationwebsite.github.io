@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voters’ Education</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/31c94032a6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="protostyle.css">
+</head>
+<body>
+  <div class="topnav">
+    <a href="prototype.html" id="Wname">V.EDUC</a>
+    <div id="nav-btns">
+      <ul>
+        <li><a class="navbtn0 " href="LEEACEVEDAWORK2.html"> Voting<br> Registration</a></li>
+      </ul>
+
+      <ul>
+        <li><a class="navbtn1"href="index1.html">Election Dates<br>and Deadline</a></li>
+      </ul>
+
+      <ul>
+        <li><a class="navbtn2"href="votingpro.html">Voting <br>Procedures</a></li>
+      </ul>
+    
+      <ul>
+        <li><a class="navbtn3"href="voter-identification.html">Voting <br>Identification</a></li>
+      </ul>
+    
+      <ul>
+        <li><a class="navbtn4" href="educreso.html">Educational<br> Resources</a></li>
+      </ul>
+    
+      <ul>
+        <li><a class="navbtn5"href="Can-Iss.html">Candidates <br>and Issues</a></li>
+      </ul>
+    </div>
+    
+      
+  </div>
+  <div>
+    <div class="imageforhome">
+      <img id="bg1" src="mara-rivera-oXKiJzsCYJs-unsplash.jpg"   alt="Philippine Flags on a Building">
+      <div id="color-overlay"></div>
+    </div>
+    <div id="div2" >
+      <p id="title1">Voters Education</p>
+      <p id="sentence-under-title1">"Provide yourself with knowledge and make informed decisions"</p>
+    </div>
+  </div>
+
+  <br><br>
+  
+  <section id="about" style="margin-top: 500px;">
+  <div class="imageforhome2">
+    <!-- <img src="vote5.jpg"   alt="Image 1"> -->
+    </div>
+  <div id="div3">
+    <i class="fa-regular fa-handshake" id="handshake" onmouseover="mouseOver()" onmouseout="mouseOut()" style="font-size: 200px;  margin: 130px 0 0 150px; padding: 20px; position: absolute; color: rgb(0, 0, 0);"></i>
+    <p id="title2">About Us</p>
+    <p id="focusto">This website is all about the following:<br><br>
+      1. Empowering Philippine Citizens For Responsible Voting:<br>
+      This website emphasizes the importance of voter education in empowering 
+      Philippine citizens to make informed decisions at the polls and fostering responsible voting behavior.
+      <br>
+      2. Making Voter Education a Pillar of Democracy in the Philippines:<br>
+      This document highlights the significance of voter education in producing
+        a mature and informed electorate, contributing to the overall democratic process in the Philippines.
+      <br>
+      3. Power to the people: An in-depth look on voter education:<br> 
+      This article discusses the importance of voter education in preparing
+      the Filipino electorate for national elections and emphasizes the need for effective voter education programs.
+      <br>
+      4. Civic education and the Filipino voter:<br>
+      This opinion piece highlights the role of civic society groups in promoting 
+      voter registration and implementing voter education programs in preparation for the
+        upcoming elections in the Philippines.
+    </p>
+  </div>
+  </div>
+</section>
+ <br>
+  <div id="con1">
+    <h2 id="anim-colla">Frequently Asked Questions(FAQ)</h2>
+
+    <button class="collapsible">What is the purpose of this website?</button>
+      <div class="content">
+        <p>This website is dedicated to provide comprehensive and unbiased 
+          information to empower voters with the knowledge they need to make 
+          informed decisions during elections.</p>
+      </div>
+    <button class="collapsible">When is the next election, and what am I voting for?</button>
+      <div class="content">
+        <p>Check our "Election Calendar" to find information about upcoming
+          elections in your area, including dates, types of elections, and
+            positions being contested.</p>
+      </div>
+    <button class="collapsible">Can I vote by mail, and how does it work?</button>
+      <div class="content">
+        <p>Explore our "Voting Options" section to learn about absentee voting
+          and mail-in voting processes, eligibility criteria, and deadlines.</p>
+      </div>
+    <button class="collapsible">What identification do I need to bring to the polling place?.</button>
+      <div class="content">
+        <p>Check our "Voter ID Requirements" page for information on the 
+          identification documents needed to cast your vote, as these 
+          requirements vary by jurisdiction.</p>
+      </div>
+  </div>
+
+  <div class="social-media">
+    <a href="https://www.facebook.com/comelec.ph/"><img src="facebook.png" alt="Facebook"></a>
+    <a href="https://twitter.com/COMELEC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="twitter.png" alt="Twitter"></a>
+    <a href="https://www.youtube.com/COMELEC"><img src="youtube.png" alt="Instagram"></a>
+  </div>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+
+    function mouseOver(){
+      document.getElementById("handshake").style.borderRadius = "70px";
+      document.getElementById("handshake").style.boxShadow = "-0.3px 1px 3px 1px #1919199f";
+    }
+
+    function mouseOut() {
+      document.getElementById("handshake").style.borderRadius = "0";
+      document.getElementById("handshake").style.boxShadow = "none";
+    }
+  </script>
+</body>
+</html>

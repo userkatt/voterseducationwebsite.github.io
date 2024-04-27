@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+
+*,
+*:before
+*:after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Hind', sans-serif;
+  background-color: #ecf0f1;
+}
+
+
+
+ /* topnav */
+ 
+ #Wname{ 
+  font-weight: 600;
+  font-size: 55px;
+  padding-left: 70px;
+  padding-top: 10px;
+  margin:0 ;
+  width: 160px;
+  height: 45px;
+  color: rgb(0, 0, 0);
+  font-family: monospace;
+}
+
+#Wname:hover{
+  cursor: pointer;
+}
+
+.topnav {
+  z-index: 1;
+  top: 0;
+  position: fixed;
+  display: flex;
+  height: 90px;
+  background-color: #ffffff;
+  width: 100%;
+  box-shadow: 2px 5px 7px #1919199f;
+}
+.topnav a {
+  color: #000000; /* Default color for links */
+  padding: 20px;
+  transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+#nav-btns{
+  text-decoration: none;
+  right: 0;
+  margin: 0 0 0 600px;
+  
+  transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+/* nav buttons */
+
+ul{
+  list-style:none;
+}
+
+a{
+  text-decoration: none;
+  color:rgb(114, 114, 114);
+  text-decoration: none;
+  padding-left: 10px;
+  padding-top: 0px;
+}
+
+.navbtn0 {
+  /* font-family: 'Hind', sans-serif; */
+  text-align: center;
+  font-size: 17px;
+  margin: -14px 0 0 -200px;
+  position: absolute;
+  display: inline;
+  height: 20px;
+  text-decoration: none;
+  content: "";  
+}
+
+.navbtn0:after{
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0px;
+  left: 12px;
+  bottom: -16px;
+  transition: 0.3s; 
+  background-color:#e74c3c;
+}
+
+.navbtn0:hover{
+  color: #2c3e50;
+}
+
+.navbtn0:hover::after{
+  width: 108px;
+  
+  
+}
+
+.navbtn1 {
+    position: fixed;
+    font-size: 17px;
+    margin: -14px 0 0 -70px;
+    position: absolute;
+    display: inline;
+    height: 20px;
+    text-decoration: none;
+}
+
+.navbtn1:after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0px;
+    left: 12px;
+    bottom: -17px;
+    transition: 0.3s; 
+    background-color:#e74c3c;
+}
+
+.navbtn1:hover{
+    color: #2c3e50;
+}
+
+.navbtn1:hover::after{
+    width: 120px;
+} 
+
+.navbtn2 {
+  text-align: center;
+  font-size: 17px;
+  margin: -14px 0 0 65px;
+  position: absolute;
+  display: inline;
+  height: 20px;
+  text-decoration: none;
+}
+
+.navbtn2:after{
+  content: "";
+  position: absolute;
+  height: 3.2px;
+  width: 0px;
+  left: 8px;
+  bottom: -17px;
+  transition: 0.3s; 
+  background-color:#e74c3c;
+}
+
+.navbtn2:hover{
+  color: #2c3e50;
+}
+
+.navbtn2:hover::after{
+  width: 103px;
+} 
+
+.navbtn3 {
+  text-align: center;
+  font-size: 17px;
+  margin: -14px 0 0 178px;
+  /* margin-top:10px ; */
+  position: absolute;
+  display: inline;
+  height: 20px;
+  text-decoration: none;
+}
+
+#highlight{
+  z-index: 1;
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 110px;
+  top: 75px;
+  right: 290px;
+  bottom: -9px;
+  transition: 0.3s; 
+  background-color:#e74c3c;
+}
+
+.navbtn3:hover{
+  color: #2c3e50;
+}
+
+
+.navbtn4 {
+  text-align: center;
+  font-size: 17px;
+  margin: -14px 0 0 298px;
+  position: absolute;
+  display: inline;
+  width: 60px;
+  height: 20px;
+  text-decoration: none;
+}
+
+.navbtn4:after{
+  content: "";
+  position: absolute;
+  height: 3.2px;
+  width: 0px;
+  left: 10px;
+  bottom: -16px;
+  transition: 0.3s; 
+  background-color:#e74c3c;
+}
+
+.navbtn4:hover{
+  color: #2c3e50;
+}
+
+.navbtn4:hover::after{
+  width: 105px;
+} 
+
+.navbtn5 {
+  /* position: fixed; */
+  font-size: 17px;
+  background-color: rgb(255, 255, 255);
+  margin: -14px 0 0 420px;
+  position: absolute;
+  display: inline;
+  width: 85px;
+  height: 20px;
+  text-decoration: none;
+}
+
+.navbtn5:after{
+  content: "";
+  position: absolute;
+  height: 3.2px;
+  width: 0px;
+  left: 12px;
+  bottom: -16px;
+  transition: 0.3s; 
+  background-color:#e74c3c;
+}
+
+.navbtn5:hover{
+  color: #2c3e50;
+}
+
+.navbtn5:hover::after{
+  width: 100px;
+} 
+
+/* Add a class to indicate the active link */
+.active {
+  color: #3498db; /* Change color when active */
+}
+
+#txts{
+  font-size: 1.3rem;
+  margin-top: 150px;
+  margin-left: 120px;
+  margin-right: 122px;
+  margin-bottom: 0;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 10px grey; /*x y opacity topleft*/
+}
+
+#txts2{
+  font-size: 1rem;
+  margin: 50px 122px 50px 120px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 10px grey; /*x y opacity topleft*/
+}
+
+.mySlides {
+  display: none; 
+  margin: 0 0 0 90px;
+  padding: 100px 0 0 380px;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative; 
+  background-color: #ffffff;
+  height: 680px;
+  margin: 100px 0px 0px 0;
+  overflow-x: hidden;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 38%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 16px;
+  color: rgb(18, 18, 18);
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 420px;
+  border-radius: 0 3px 3px 0;
+}
+
+.prev{
+  left: 400px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: #ffffff;
+  background-color: rgba(82, 80, 80, 0.8);
+}
+
+/* Caption text */
+.text {
+  font-size: 17px;
+  padding: 8px 0px 0 0;
+  position: absolute;
+  top: 500px;
+  left: 480px;
+  width: 500px;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #303133;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 50px;
+  left: 660px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 25px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  z-index: -1;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}

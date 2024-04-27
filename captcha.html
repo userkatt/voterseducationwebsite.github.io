@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script>
+          var code;
+          function createCaptcha() {
+              //clear the contents of captcha div first 
+              document.getElementById('captcha').innerHTML = "";
+              var charsArray =
+              "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@!#$%^&*";
+              var lengthOtp = 6;
+              var captcha = [];
+              for (var i = 0; i < lengthOtp; i++) {
+                  //below code will not allow Repetition of Characters
+                  var index = Math.floor(Math.random() * charsArray.length + 1); //get the next character from the array
+                  if (captcha.indexOf(charsArray[index]) == -1)
+                  captcha.push(charsArray[index]);
+                  else i--;
+              }
+              var canv = document.createElement("canvas");
+              canv.id = "captcha";
+              canv.width = 100;
+              canv.height = 50;
+              var ctx = canv.getContext("2d");
+              ctx.font = "25px Georgia";
+              ctx.strokeText(captcha.join(""), 0, 30);
+              //storing captcha so that can validate you can save it somewhere else according to your specific requirements
+              code = captcha.join("");
+              document.getElementById("captcha").appendChild(canv); // adds the canvas to the body element
+          }
+          function validateCaptcha() {
+              event.preventDefault();
+              debugger
+              if (document.getElementById("cpatchaTextBox").value == code) {
+                  alert("Valid Captcha")
+                  window.location.href = 'prototype.html'
+              }else{
+                  alert("Invalid Captcha. try Again");
+                  createCaptcha();
+              }
+          }
+        </script>
+    </head>
+    <body onload="createCaptcha()">
+        <!-- <div class="topnav">
+            <h1 id="Wname">V.Educ</h1>
+         
+          <div class="dropdown1">
+            <a class="dropbtn1">Voter Information</a>
+           <div class="dropdown-content1">
+               <a href="ani.html">Explanation of the voter registration process</a>
+               <a href="#">Eligibility criteria for voter registration</a>
+               <a href="#">Deadline for voter registration</a>
+               <a href="#">Online and offline registration options</a>
+               <a href="#">Upcoming election dates</a>
+          </div>
+          </div>
+          </div>
+          <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+          
+            <ul class="menu__box">
+              <li><a class="menu__item" href="#">Home</a></li>
+              <li><a class="menu__item" href="#about">About</a></li>
+              <li><a class="menu__item" href="#popup-box1" >Visitor's Log</a></li>
+              <li><a class="menu__item" href="#popup-box2">Visitor's Data</a></li>
+            </ul>
+          </div> -->
+          <form onsubmit="validateCaptcha()">
+            <div id="captcha">
+            </div>
+            <input type="text" placeholder="Captcha" id="cpatchaTextBox"/>
+            <button type="submit">Submit</button>
+          </form>
+          
+    </body>
+</html>          

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="LEEKO1.css">
+</head>
+<body>
+  <div class="topnav">
+    <a href="prototype.html" id="Wname">V.EDUC</a>
+    <div id="nav-btns">
+      <ul>
+        <li>
+          <a class="navbtn0 " href="LEEACEVEDAWORK2.html"> Voting<br> Registration</a>
+          <div id="highlight1"></div>
+        </li>
+      </ul>
+
+      <ul>
+        <li><a class="navbtn1"href="index1.html">Election Dates<br>and Deadline</a></li>
+      </ul>
+
+      <ul>
+        <li><a class="navbtn2"href="votingpro.html">Voting <br>Procedures</a></li>
+      </ul>
+    
+      <ul>
+        <li><a class="navbtn3"href="voter-identification.html">Voting <br>Identification</a></li>
+      </ul>
+    
+      <ul>
+        <li><a class="navbtn4" href="educreso.html">Educational<br> Resources</a></li>
+      </ul>
+    
+      <ul>
+        <li><a class="navbtn5"href="Can-Iss.html">Candidates <br>and Issues</a></li>
+      </ul>
+    </div>
+    
+      
+  </div>
+<!--       
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+      
+        <ul class="menu__box">
+            <li><a class="menu__item"  href="#about">Explanation of the voter registration process</a></li>
+            <li><a class="menu__item"  href="#about2">Deadline for voter registration</a></li>
+            <li><a class="menu__item"  href="#about3">Online and offline registration options</a></li>
+            <li><a class="menu__item"  href="#about4">Upcoming election dates</a></li>
+
+        </ul>
+      </div>
+    
+     -->
+    
+    <script>
+
+      // JavaScript for updating active menu item on scroll
+
+      window.addEventListener("scroll", function() {
+
+        const menuItems = document.querySelectorAll(".menu__item");
+
+        const sections = document.querySelectorAll("h1");
+
+        let current = "";
+
+        sections.forEach(function(section) {
+
+          const sectionTop = section.offsetTop;
+
+          if (window.pageYOffset >= sectionTop - 50) {
+
+            current = section.getAttribute("id");
+
+          }
+
+        });
+
+        menuItems.forEach(function(item) {
+
+          item.classList.remove("active");
+
+          if (item.getAttribute("href").substring(4) === current) {
+
+            item.classList.add("active");
+
+          }
+
+        });
+
+      });
+
+    </script>
+    <div class="html">
+      <br><br><br><br><br>
+ 
+      <section id="vid1">
+        <div class="video-container">
+          <video controls>
+            <source src="Boboto ka ba sa 2022 Procedure paano magparehistro sa Comelec NXT.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="description">
+            <p><b>STEP-BY-STEP VOTER'S REGISTRATION PROCESS</b> | CREDITS: YOUTUBE: ABS-CBN News | 061221  <br>
+          </p>
+          </div>
+        </div>
+      </section>
+      <br><br>
+      <section id="about2">
+        <div id="div1">
+    <h1 id="expl-vot-process" class="titles"> EXPLANATION OF THE VOTER REGISTRATION PROCESS:</h1>  
+        <p class="process-txt">To register as a voter in the Philippines, you need to follow the COMELEC (Commission on Elections) registration process. Here's a step-by-step guide:</p>
+        <ol>
+            <li style="font-size: 17px;"><b>Visit the Local COMELEC Office:</b> Go to your nearby COMELEC office, usually located in your district, city, or municipality.</li>
+                   <br><br>
+            <li style="font-size: 17px;"><b>Bring Required Documents: </b>
+              Bring valid IDs and a photocopy for first-time voters. Acceptable IDs include National ID/PhilSys ID, driver's license, SSS ID/GSIS ID/UMID, passport, etc. If you're turning 18 on election day, also provide your original birth certificate and a photocopy.</li>
+                  <br><br>
+            <li style="font-size: 17px;"><b>Download and Fill Out Form:</b> 
+              Beforehand, download the voter's registration form from the COMELEC website. Print it on long bond paper and manually fill it out. Don't sign or put thumb marks until you're in front of the election officer.</li>
+                  <br><br>
+            <li style="font-size: 17px;"><b>Follow COVID-19 Safety Guidelines:  </b>Due to the pandemic, follow safety protocols at the COMELEC office. Bring your own pen, wear a face mask, use hand sanitizer, and adhere to office guidelines.</li>
+                   <br><br>
+            <li style="font-size: 17px;"><b>Complete Registration:</b> Submit your documents and filled-out form to the designated officer at the COMELEC office. They'll verify your identity, residence, and registration status. Your biometrics will be captured, including photo, fingerprints, and signature. You'll receive an acknowledgment receipt.</li>
+                 <br><br>
+            <li style="font-size: 17px;"><b>Await Approval:</b> Your application will be reviewed by the Election Registration Board during its quarterly hearing. Once approved, your information will be recorded in the voters' book for your area, making you a registered voter.</li>
+        </ol>
+        </div>
+    </section>
+    <br><br>
+      <section id="about2">
+        <div id="div2">
+          <h1 id="ded-vot-reg" class="titles">DEADLINE FOR THE VOTER REGISTRATION:</h1>
+          <p class="process-txt">The deadline for voter registration in the Philippines depends on upcoming elections and announcements from COMELEC. Stay updated via COMELEC's website, social media, or local news to register within the timeframe.</p>
+            
+        </div>
+      </section>
+  <br><br>
+
+  <section id="vid1">
+    <div class="video-container">
+      <video controls>
+        <source src="How-to-use-Comelec_s-Mobile-Registration-Form-App.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="description">
+        <p><b>HOW TO USE COMELEC'S MOBILE REGISTRATION FORM APP</b> | CREDITS: YOUTUBE:  Rappler | 061621  <br>
+      </p>
+      </div>
+    </div>
+  </section>
+  <section id="about3">
+    <div id="div3">
+      <h1 id="on-off-reg-proc" class="titles">ONLINE & OFFLINE REGISTRATION OPTIONS:</h1>
+        <p class="process-txt"> In the Philippines, voter registration can be done 
+          through both online and offline options. Here's a brief overview of each:</p><br>
+        <p style="font-size: 17px;">
+        1. <b>Online Registration:</b> COMELEC offers online voter registration through iRehistro, enabling eligible voters to complete registration forms and schedule biometrics appointments online. Visit the COMELEC website for instructions. Check for specific requirements and limitations on the official site.
+              <br><br>
+        2. <b> Offline Registration:</b> Traditional voter registration involves visiting the COMELEC office. Here's how it works:
+        <br><br>
+        <b>a. Visit COMELEC Office:</b> Go to the local office in your district, city, or municipality, usually near your city or municipal hall.
+        <br><br> 
+        <b> b. Submit Requirements:</b> Bring necessary documents like valid IDs and proof of residency. Check the official website for specific requirements.
+        <br><br>
+        <b>c. Fill Registration Form:</b> Complete the voter registration form provided by COMELEC. Download or accomplish it at the office, but don't sign until instructed.
+        <br><br>
+        <b> d. Biometrics Capture:</b> Your biometric data, including photo, fingerprints, and signature, will be collected.
+          <br><br>
+          <b> e. Receive Acknowledgment Receipt:</b> After registration, you'll get an acknowledgment receipt as proof.
+        <br><br>
+        Online and offline registration availability may vary. Refer to the official COMELEC website or contact the local office for current information.
+          <br><br></p>
+  </section>
+  <!-- <section id="vid2">
+    <div class="video-container">
+      <video controls>
+        <source src="Comelec Holding 2025 elections.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="description">
+        <p><b>HOLDING 2025 ELECTIONS WITH CHA-CHA PLEBISCITE  'logical' </b> | CREDITS: YOUTUBE: INQUIRER.net  | 022924  <br>
+      </p>
+      </div>
+    </div>
+  </section>
+  <br><br>
+  <section id="about4">
+  <div id="div4">
+    <h1 id="4h">Recent and Upcoming Elections</h1>
+    <p style="font-size: 25px;">As of my last update in January 2022, the next scheduled national elections in the Philippines after May 9, 2022, would be in 2025. However, for the most accurate and up-to-date information on future elections in the Philippines, I recommend checking with the Commission on Elections (COMELEC) or official government announcements closer to the expected election date.</p>
+
+    <br><br>
+
+    <br><br>
+  </div>
+  </section> -->
+</body>
+</html>
